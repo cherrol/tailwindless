@@ -1,0 +1,410 @@
+/*
+ * Font size
+**/
+// with variables
+.font-size(normal,  @font-size);
+.font-size(size-base,  @font-size);
+.font-size(xs,  @font-size-mini);
+.font-size(sm,  @font-size-small);
+.font-size(lg,  @font-size-larg);
+.font-size(xl,  @font-size-larger);
+.font-size(h1,  @h1);
+.font-size(h2,  @h2);
+.font-size(h3,  @h3);
+.font-size(h4,  @h4);
+.font-size(h5,  @h5);
+.font-size(h6,  @h6);
+// with pixel
+.font-size(12, (12px / @font-size * 1rem));
+.font-size(13, (13px / @font-size * 1rem));
+.font-size(13, (13px / @font-size * 1rem));
+.font-size(14, (14px / @font-size * 1rem));
+.font-size(15, (15px / @font-size * 1rem));
+.font-size(16, (16px / @font-size * 1rem));
+.font-size(17, (17px / @font-size * 1rem));
+.font-size(18, (18px / @font-size * 1rem));
+.font-size(19, (19px / @font-size * 1rem));
+.font-size(20, (20px / @font-size * 1rem));
+.font-size(21, (21px / @font-size * 1rem));
+.font-size(22, (22px / @font-size * 1rem));
+.font-size(23, (23px / @font-size * 1rem));
+.font-size(24, (24px / @font-size * 1rem));
+.font-size(25, (25px / @font-size * 1rem));
+.font-size(26, (26px / @font-size * 1rem));
+.font-size(27, (27px / @font-size * 1rem));
+.font-size(28, (28px / @font-size * 1rem));
+.font-size(29, (29px / @font-size * 1rem));
+.font-size(30, (30px / @font-size * 1rem));
+.font-size(31, (31px / @font-size * 1rem));
+.font-size(32, (32px / @font-size * 1rem));
+@media (min-width: @screen-sm) {
+  @screens: ~'sm';
+  // with variables
+  .font-size(normal,  @font-size, @screens: @screens);
+  .font-size(size-base,  @font-size, @screens: @screens);
+  .font-size(xs,  @font-size-mini, @screens: @screens);
+  .font-size(sm,  @font-size-small, @screens: @screens);
+  .font-size(lg,  @font-size-larg, @screens: @screens);
+  .font-size(xl,  @font-size-larger, @screens: @screens);
+  .font-size(h1,  @h1);
+  .font-size(h2,  @h2);
+  .font-size(h3,  @h3);
+  .font-size(h4,  @h4);
+  .font-size(h5,  @h5);
+  .font-size(h6,  @h6);
+  // with pixel
+  .font-size(12, (12px / @font-size * 1rem), @screens: @screens);
+  .font-size(13, (13px / @font-size * 1rem), @screens: @screens);
+  .font-size(13, (13px / @font-size * 1rem), @screens: @screens);
+  .font-size(14, (14px / @font-size * 1rem), @screens: @screens);
+  .font-size(15, (15px / @font-size * 1rem), @screens: @screens);
+  .font-size(16, (16px / @font-size * 1rem), @screens: @screens);
+  .font-size(17, (17px / @font-size * 1rem), @screens: @screens);
+  .font-size(18, (18px / @font-size * 1rem), @screens: @screens);
+  .font-size(19, (19px / @font-size * 1rem), @screens: @screens);
+  .font-size(20, (20px / @font-size * 1rem), @screens: @screens);
+  .font-size(21, (21px / @font-size * 1rem), @screens: @screens);
+  .font-size(22, (22px / @font-size * 1rem), @screens: @screens);
+  .font-size(23, (23px / @font-size * 1rem), @screens: @screens);
+  .font-size(24, (24px / @font-size * 1rem), @screens: @screens);
+  .font-size(25, (25px / @font-size * 1rem), @screens: @screens);
+  .font-size(26, (26px / @font-size * 1rem), @screens: @screens);
+  .font-size(27, (27px / @font-size * 1rem), @screens: @screens);
+  .font-size(28, (28px / @font-size * 1rem), @screens: @screens);
+  .font-size(29, (29px / @font-size * 1rem), @screens: @screens);
+  .font-size(30, (30px / @font-size * 1rem), @screens: @screens);
+  .font-size(31, (31px / @font-size * 1rem), @screens: @screens);
+  .font-size(32, (32px / @font-size * 1rem), @screens: @screens);
+}
+@media (min-width: @screen-md) {
+  @screens: ~'md';
+  // with variables
+  .font-size(normal,  @font-size, @screens: @screens);
+  .font-size(size-base,  @font-size, @screens: @screens);
+  .font-size(xs,  @font-size-mini, @screens: @screens);
+  .font-size(sm,  @font-size-small, @screens: @screens);
+  .font-size(lg,  @font-size-larg, @screens: @screens);
+  .font-size(xl,  @font-size-larger, @screens: @screens);
+  .font-size(h1,  @h1);
+  .font-size(h2,  @h2);
+  .font-size(h3,  @h3);
+  .font-size(h4,  @h4);
+  .font-size(h5,  @h5);
+  .font-size(h6,  @h6);
+  // with pixel
+  .font-size(12, (12px / @font-size * 1rem), @screens: @screens);
+  .font-size(13, (13px / @font-size * 1rem), @screens: @screens);
+  .font-size(13, (13px / @font-size * 1rem), @screens: @screens);
+  .font-size(14, (14px / @font-size * 1rem), @screens: @screens);
+  .font-size(15, (15px / @font-size * 1rem), @screens: @screens);
+  .font-size(16, (16px / @font-size * 1rem), @screens: @screens);
+  .font-size(17, (17px / @font-size * 1rem), @screens: @screens);
+  .font-size(18, (18px / @font-size * 1rem), @screens: @screens);
+  .font-size(19, (19px / @font-size * 1rem), @screens: @screens);
+  .font-size(20, (20px / @font-size * 1rem), @screens: @screens);
+  .font-size(21, (21px / @font-size * 1rem), @screens: @screens);
+  .font-size(22, (22px / @font-size * 1rem), @screens: @screens);
+  .font-size(23, (23px / @font-size * 1rem), @screens: @screens);
+  .font-size(24, (24px / @font-size * 1rem), @screens: @screens);
+  .font-size(25, (25px / @font-size * 1rem), @screens: @screens);
+  .font-size(26, (26px / @font-size * 1rem), @screens: @screens);
+  .font-size(27, (27px / @font-size * 1rem), @screens: @screens);
+  .font-size(28, (28px / @font-size * 1rem), @screens: @screens);
+  .font-size(29, (29px / @font-size * 1rem), @screens: @screens);
+  .font-size(30, (30px / @font-size * 1rem), @screens: @screens);
+  .font-size(31, (31px / @font-size * 1rem), @screens: @screens);
+  .font-size(32, (32px / @font-size * 1rem), @screens: @screens);
+}
+@media (min-width: @screen-lg) {
+  @screens: ~'lg';
+  // with variables
+  .font-size(normal,  @font-size, @screens: @screens);
+  .font-size(size-base,  @font-size, @screens: @screens);
+  .font-size(xs,  @font-size-mini, @screens: @screens);
+  .font-size(sm,  @font-size-small, @screens: @screens);
+  .font-size(lg,  @font-size-larg, @screens: @screens);
+  .font-size(xl,  @font-size-larger, @screens: @screens);
+  .font-size(h1,  @h1);
+  .font-size(h2,  @h2);
+  .font-size(h3,  @h3);
+  .font-size(h4,  @h4);
+  .font-size(h5,  @h5);
+  .font-size(h6,  @h6);
+  // with pixel
+  .font-size(12, (12px / @font-size * 1rem), @screens: @screens);
+  .font-size(13, (13px / @font-size * 1rem), @screens: @screens);
+  .font-size(13, (13px / @font-size * 1rem), @screens: @screens);
+  .font-size(14, (14px / @font-size * 1rem), @screens: @screens);
+  .font-size(15, (15px / @font-size * 1rem), @screens: @screens);
+  .font-size(16, (16px / @font-size * 1rem), @screens: @screens);
+  .font-size(17, (17px / @font-size * 1rem), @screens: @screens);
+  .font-size(18, (18px / @font-size * 1rem), @screens: @screens);
+  .font-size(19, (19px / @font-size * 1rem), @screens: @screens);
+  .font-size(20, (20px / @font-size * 1rem), @screens: @screens);
+  .font-size(21, (21px / @font-size * 1rem), @screens: @screens);
+  .font-size(22, (22px / @font-size * 1rem), @screens: @screens);
+  .font-size(23, (23px / @font-size * 1rem), @screens: @screens);
+  .font-size(24, (24px / @font-size * 1rem), @screens: @screens);
+  .font-size(25, (25px / @font-size * 1rem), @screens: @screens);
+  .font-size(26, (26px / @font-size * 1rem), @screens: @screens);
+  .font-size(27, (27px / @font-size * 1rem), @screens: @screens);
+  .font-size(28, (28px / @font-size * 1rem), @screens: @screens);
+  .font-size(29, (29px / @font-size * 1rem), @screens: @screens);
+  .font-size(30, (30px / @font-size * 1rem), @screens: @screens);
+  .font-size(31, (31px / @font-size * 1rem), @screens: @screens);
+  .font-size(32, (32px / @font-size * 1rem), @screens: @screens);
+}
+@media (min-width: @screen-xl) {
+  @screens: ~'xl';
+  // with variables
+  .font-size(normal,  @font-size, @screens: @screens);
+  .font-size(size-base,  @font-size, @screens: @screens);
+  .font-size(xs,  @font-size-mini, @screens: @screens);
+  .font-size(sm,  @font-size-small, @screens: @screens);
+  .font-size(lg,  @font-size-larg, @screens: @screens);
+  .font-size(xl,  @font-size-larger, @screens: @screens);
+  .font-size(h1,  @h1);
+  .font-size(h2,  @h2);
+  .font-size(h3,  @h3);
+  .font-size(h4,  @h4);
+  .font-size(h5,  @h5);
+  .font-size(h6,  @h6);
+  // with pixel
+  .font-size(12, (12px / @font-size * 1rem), @screens: @screens);
+  .font-size(13, (13px / @font-size * 1rem), @screens: @screens);
+  .font-size(13, (13px / @font-size * 1rem), @screens: @screens);
+  .font-size(14, (14px / @font-size * 1rem), @screens: @screens);
+  .font-size(15, (15px / @font-size * 1rem), @screens: @screens);
+  .font-size(16, (16px / @font-size * 1rem), @screens: @screens);
+  .font-size(17, (17px / @font-size * 1rem), @screens: @screens);
+  .font-size(18, (18px / @font-size * 1rem), @screens: @screens);
+  .font-size(19, (19px / @font-size * 1rem), @screens: @screens);
+  .font-size(20, (20px / @font-size * 1rem), @screens: @screens);
+  .font-size(21, (21px / @font-size * 1rem), @screens: @screens);
+  .font-size(22, (22px / @font-size * 1rem), @screens: @screens);
+  .font-size(23, (23px / @font-size * 1rem), @screens: @screens);
+  .font-size(24, (24px / @font-size * 1rem), @screens: @screens);
+  .font-size(25, (25px / @font-size * 1rem), @screens: @screens);
+  .font-size(26, (26px / @font-size * 1rem), @screens: @screens);
+  .font-size(27, (27px / @font-size * 1rem), @screens: @screens);
+  .font-size(28, (28px / @font-size * 1rem), @screens: @screens);
+  .font-size(29, (29px / @font-size * 1rem), @screens: @screens);
+  .font-size(30, (30px / @font-size * 1rem), @screens: @screens);
+  .font-size(31, (31px / @font-size * 1rem), @screens: @screens);
+  .font-size(32, (32px / @font-size * 1rem), @screens: @screens);
+}
+
+/*
+ * Font style
+**/
+.font-style(italic, italic);
+.font-style(not-italic, normal);
+
+/*
+ * Font weight
+**/
+.font-weight(thin, 100);
+.font-weight(extralight, 200);
+.font-weight(light, 300);
+.font-weight(normal, 400);
+.font-weight(medium, 500);
+.font-weight(semibold, 600);
+.font-weight(bold, 700);
+.font-weight(extrabold, 800);
+.font-weight(black, 900);
+
+/*
+ * Letter sapcing
+**/
+.-tracking-999 {
+  letter-spacing: -999px;
+}
+.letter-spacing(least, -999px);
+.letter-spacing(tighter, -0.05em);
+.letter-spacing(tight, -0.025em);
+.letter-spacing(normal, normal);
+.letter-spacing(wide, 0.025em);
+.letter-spacing(wider, 0.05em);
+.letter-spacing(widest, 0.1em);
+
+/*
+ * Line height
+**/
+// with keyword
+.line-height(none, 1);
+.line-height(tight, 1.25);
+.line-height(snug, 1.375);
+.line-height(normal, 1.5);
+.line-height(relaxed, 1.625);
+.line-height(loose, 2);
+// with pixel
+.line-height(12, 12px);
+.line-height(13, 13px);
+.line-height(13, 13px);
+.line-height(14, 14px);
+.line-height(15, 15px);
+.line-height(16, 16px);
+.line-height(17, 17px);
+.line-height(18, 18px);
+.line-height(19, 19px);
+.line-height(20, 20px);
+.line-height(21, 21px);
+.line-height(22, 22px);
+.line-height(23, 23px);
+.line-height(24, 24px);
+.line-height(25, 25px);
+.line-height(26, 26px);
+.line-height(27, 27px);
+.line-height(28, 28px);
+.line-height(29, 29px);
+.line-height(30, 30px);
+.line-height(31, 31px);
+.line-height(32, 32px);
+
+/*
+ * List style type
+**/
+.list-style-type(none, none);
+.list-style-type(disc, disc);
+.list-style-type(decimal, decimal);
+.list-style-type(circle, circle);
+.list-style-type(square, square);
+
+/*
+ * List style type
+**/
+.list-style-type(inside, inside);
+.list-style-type(outside, outside);
+
+/*
+ * Text align
+**/
+.text-align(left, left);
+.text-align(right, right);
+.text-align(center, center);
+.text-align(justify, justify);
+
+/*
+ * Text color
+**/
+.text-color(color-base, @text-color, @hover: true);
+.text-color(primary, @site-base, @hover: true);
+.text-color(white, #fff, @hover: true);
+.text-color(darker, @text-color-darker, @hover: true);
+.text-color(dark, @text-color-dark, @hover: true);
+.text-color(lighter, @text-color-lighter, @hover: true);
+.text-color(light, @text-color-light, @hover: true);
+.text-color(success, @color-success, @hover: true);
+.text-color(info, @color-info, @hover: true);
+.text-color(warning, @color-warning, @hover: true);
+.text-color(error, @color-error, @hover: true);
+
+/*
+ * Text decoration
+**/
+.text-decoration(underline, underline, @hover: true);
+.text-decoration(line-through, line-through);
+.text-decoration(no-underline, none);
+
+/*
+ * Text transform
+**/
+.text-transform(uppercase, uppercase);
+.text-transform(lowercase, lowercase);
+.text-transform(capitalize, capitalize);
+.text-transform(normal-case, none);
+
+/*
+ * Text overflow
+**/
+.text-overflow(ellipsis, ellipsis);
+.text-overflow(clip, clip);
+.text-overflow(1, 1, @hover: true);
+.text-overflow(2, 2, @hover: true);
+.text-overflow(3, 3, @hover: true);
+.text-overflow(4, 4, @hover: true);
+.text-overflow(5, 5, @hover: true);
+.text-overflow(6, 6, @hover: true);
+.text-overflow(7, 7, @hover: true);
+.text-overflow(8, 8, @hover: true);
+.text-overflow(9, 9, @hover: true);
+.text-overflow(10, 10, @hover: true);
+@media (min-width: @screen-sm) {
+  @screens: ~'sm';
+  .text-overflow(1, 1, @hover: true, @screens: @screens);
+  .text-overflow(2, 2, @hover: true, @screens: @screens);
+  .text-overflow(3, 3, @hover: true, @screens: @screens);
+  .text-overflow(4, 4, @hover: true, @screens: @screens);
+  .text-overflow(5, 5, @hover: true, @screens: @screens);
+  .text-overflow(6, 6, @hover: true, @screens: @screens);
+  .text-overflow(7, 7, @hover: true, @screens: @screens);
+  .text-overflow(8, 8, @hover: true, @screens: @screens);
+  .text-overflow(9, 9, @hover: true, @screens: @screens);
+  .text-overflow(10, 10, @hover: true, @screens: @screens);
+}
+@media (min-width: @screen-md) {
+  @screens: ~'md';
+  .text-overflow(1, 1, @hover: true, @screens: @screens);
+  .text-overflow(2, 2, @hover: true, @screens: @screens);
+  .text-overflow(3, 3, @hover: true, @screens: @screens);
+  .text-overflow(4, 4, @hover: true, @screens: @screens);
+  .text-overflow(5, 5, @hover: true, @screens: @screens);
+  .text-overflow(6, 6, @hover: true, @screens: @screens);
+  .text-overflow(7, 7, @hover: true, @screens: @screens);
+  .text-overflow(8, 8, @hover: true, @screens: @screens);
+  .text-overflow(9, 9, @hover: true, @screens: @screens);
+  .text-overflow(10, 10, @hover: true, @screens: @screens);
+}
+@media (min-width: @screen-lg) {
+  @screens: ~'lg';
+  .text-overflow(1, 1, @hover: true, @screens: @screens);
+  .text-overflow(2, 2, @hover: true, @screens: @screens);
+  .text-overflow(3, 3, @hover: true, @screens: @screens);
+  .text-overflow(4, 4, @hover: true, @screens: @screens);
+  .text-overflow(5, 5, @hover: true, @screens: @screens);
+  .text-overflow(6, 6, @hover: true, @screens: @screens);
+  .text-overflow(7, 7, @hover: true, @screens: @screens);
+  .text-overflow(8, 8, @hover: true, @screens: @screens);
+  .text-overflow(9, 9, @hover: true, @screens: @screens);
+  .text-overflow(10, 10, @hover: true, @screens: @screens);
+}
+@media (min-width: @screen-xl) {
+  @screens: ~'xl';
+  .text-overflow(1, 1, @hover: true, @screens: @screens);
+  .text-overflow(2, 2, @hover: true, @screens: @screens);
+  .text-overflow(3, 3, @hover: true, @screens: @screens);
+  .text-overflow(4, 4, @hover: true, @screens: @screens);
+  .text-overflow(5, 5, @hover: true, @screens: @screens);
+  .text-overflow(6, 6, @hover: true, @screens: @screens);
+  .text-overflow(7, 7, @hover: true, @screens: @screens);
+  .text-overflow(8, 8, @hover: true, @screens: @screens);
+  .text-overflow(9, 9, @hover: true, @screens: @screens);
+  .text-overflow(10, 10, @hover: true, @screens: @screens);
+}
+
+/*
+ * Vertical align
+**/
+.vertical-align(top, top);
+.vertical-align(middle, middle);
+.vertical-align(bottom, bottom);
+.vertical-align(baseline, baseline);
+.vertical-align(text-top, text-top);
+.vertical-align(text-bottom, text-bottom);
+
+/*
+ * White space
+**/
+.white-space(normal, normal);
+.white-space(nowrap, nowrap);
+.white-space(pre, pre);
+.white-space(pre-line, pre-line);
+.white-space(pre-wrap, pre-wrap);
+
+/*
+ * White space
+**/
+.word-break(normal, normal);
+.word-break(words, break-word);
+.word-break(all, all);
+

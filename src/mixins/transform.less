@@ -1,0 +1,39 @@
+/*
+ * Transform origin
+**/
+.transform-origin(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .mixins(~'origin-@{selector}', transform-origin, @value, @hover, @focus, @screens);
+}
+
+/*
+ * Transform scale
+**/
+.transform-scale(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .mixins(~'scale-@{selector}', transform, ~'scale(@{value})', @hover, @focus, @screens);
+  .mixins(~'scale-x-@{selector}', transform, ~'scaleX(@{value})', @hover, @focus, @screens);
+  .mixins(~'scale-y-@{selector}', transform, ~'scaleY(@{value})', @hover, @focus, @screens);
+}
+
+/*
+ * Transform rotate
+**/
+.transform-rotate(@selector, @value, @hover: false, @focus: false, @screens: false, @minus: false) {
+  .mixins(~'rotate-@{selector}', transform, ~'rotate(@{value})', @hover, @focus, @screens);
+}
+.transform-rotate(@selector, @value, @hover: false, @focus: false, @screens: false, @minus: false) when (@minus) {
+  .mixins(~'-rotate-@{selector}', transform, ~'rotate(@{value} * -1)', @hover, @focus, @screens);
+}
+
+/*
+ * Transform translate
+**/
+.transform-translate(@selector, @value, @hover: false, @focus: false, @screens: false, @minus: false) {
+  .mixins(~'translate-@{selector}', transform, ~'translate(@{value}, @{value})', @hover, @focus, @screens);
+  .mixins(~'translate-x-@{selector}', transform, ~'translateX(@{value})', @hover, @focus, @screens);
+  .mixins(~'translate-y-@{selector}', transform, ~'translateY(@{value})', @hover, @focus, @screens);
+}
+.transform-translate(@selector, @value, @hover: false, @focus: false, @screens: false, @minus: false) when (@minus) {
+  .mixins(~'-translate-@{selector}', transform, ~'translate(-@{value}, -@{value})', @hover, @focus, @screens);
+  .mixins(~'-translate-x-@{selector}', transform, ~'translateX(-@{value})', @hover, @focus, @screens);
+  .mixins(~'-translate-y-@{selector}', transform, ~'translateY(-@{value})', @hover, @focus, @screens);
+}

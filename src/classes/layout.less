@@ -1,0 +1,210 @@
+/*
+ * Box sizing
+**/
+.box-sizing(border, border-box);
+.box-sizing(content, content-box);
+
+/*
+ * Display
+**/
+.display(hidden, none);
+.display(display-block, block);
+.display(inline, inline);
+.display(inline-block, inline-block);
+.display(flex, flex);
+.display(inline-flex, inline-flex);
+.display(table, table);
+.display(inline-table, inline-table);
+@media (min-width: @screen-sm) {
+  @screens: ~'sm';
+  .display(hidden, none, @screens: @screens);
+  .display(display-block, block, @screens: @screens);
+  .display(inline, inline, @screens: @screens);
+  .display(inline-block, inline-block, @screens: @screens);
+  .display(flex, flex, @screens: @screens);
+  .display(inline-flex, inline-flex, @screens: @screens);
+  .display(table, table, @screens: @screens);
+  .display(inline-table, inline-table, @screens: @screens);
+}
+@media (min-width: @screen-md) {
+  @screens: ~'md';
+  .flex-wrap(wrap, wrap, @screens: @screens);
+  .display(hidden, none, @screens: @screens);
+  .display(display-block, block, @screens: @screens);
+  .display(inline, inline, @screens: @screens);
+  .display(inline-block, inline-block, @screens: @screens);
+  .display(flex, flex, @screens: @screens);
+  .display(inline-flex, inline-flex, @screens: @screens);
+  .display(table, table, @screens: @screens);
+  .display(inline-table, inline-table, @screens: @screens);
+}
+@media (min-width: @screen-lg) {
+  @screens: ~'lg';
+  .display(hidden, none, @screens: @screens);
+  .display(display-block, block, @screens: @screens);
+  .display(inline, inline, @screens: @screens);
+  .display(inline-block, inline-block, @screens: @screens);
+  .display(flex, flex, @screens: @screens);
+  .display(inline-flex, inline-flex, @screens: @screens);
+  .display(table, table, @screens: @screens);
+  .display(inline-table, inline-table, @screens: @screens);
+}
+@media (min-width: @screen-xl) {
+  @screens: ~'xl';
+  .display(hidden, none, @screens: @screens);
+  .display(display-block, block, @screens: @screens);
+  .display(inline, inline, @screens: @screens);
+  .display(inline-block, inline-block, @screens: @screens);
+  .display(flex, flex, @screens: @screens);
+  .display(inline-flex, inline-flex, @screens: @screens);
+  .display(table, table, @screens: @screens);
+  .display(inline-table, inline-table, @screens: @screens);
+}
+
+/*
+ * Float
+**/
+.float(left, left);
+.float(right, right);
+.float(none, none);
+
+/*
+ * Clear
+**/
+.clear(left, left);
+.clear(right, right);
+.clear(both, both);
+.clear(none, none);
+
+/*
+ * Object fit
+**/
+.object-fit(contain, contain);
+.object-fit(cover, cover);
+.object-fit(fill, fill);
+.object-fit(none, none);
+.object-fit(scale-down, scale-down);
+
+/*
+ * Object position
+**/
+.object-position(bottom, bottom);
+.object-position(center, center);
+.object-position(left, left);
+.object-position(right, right);
+.object-position(top, top);
+.object-position(left-bottom, ~'left bottom');
+.object-position(left-top, ~'left top');
+.object-position(right-bottom, ~'right bottom');
+.object-position(right-top, ~'right top');
+
+/*
+ * overflow
+**/
+.overflow(auto, auto);
+.overflow(hidden, hidden, @important: true);
+.overflow(scroll, scroll);
+.overflow(visible, visible);
+
+/*
+ * Position
+**/
+.position(static, static);
+.position(fixed, fixed);
+.position(absolute, absolute);
+.position(relative, relative);
+.position(sticky, sticky);
+@media (min-width: @screen-sm) {
+  @screens: ~'sm';
+  .flex-wrap(wrap, wrap, @screens: @screens);
+  .position(static, static, @screens: @screens);
+  .position(fixed, fixed, @screens: @screens);
+  .position(absolute, absolute, @screens: @screens);
+  .position(relative, relative, @screens: @screens);
+  .position(sticky, sticky, @screens: @screens);
+}
+@media (min-width: @screen-md) {
+  @screens: ~'md';
+  .flex-wrap(wrap, wrap, @screens: @screens);
+  .position(static, static, @screens: @screens);
+  .position(fixed, fixed, @screens: @screens);
+  .position(absolute, absolute, @screens: @screens);
+  .position(relative, relative, @screens: @screens);
+  .position(sticky, sticky, @screens: @screens);
+}
+@media (min-width: @screen-lg) {
+  @screens: ~'lg';
+  .flex-wrap(wrap, wrap, @screens: @screens);
+  .position(static, static, @screens: @screens);
+  .position(fixed, fixed, @screens: @screens);
+  .position(absolute, absolute, @screens: @screens);
+  .position(relative, relative, @screens: @screens);
+  .position(sticky, sticky, @screens: @screens);
+}
+@media (min-width: @screen-xl) {
+  @screens: ~'xl';
+  .flex-wrap(wrap, wrap, @screens: @screens);
+  .position(static, static, @screens: @screens);
+  .position(fixed, fixed, @screens: @screens);
+  .position(absolute, absolute, @screens: @screens);
+  .position(relative, relative, @screens: @screens);
+  .position(sticky, sticky, @screens: @screens);
+}
+
+/*
+ * Position inset
+**/
+.position-inset(0, 0px);
+.position-inset(auto, auto);
+.position-inset(~"1\/2", 50%, @minus: true);
+.position-inset(full, 100%, @minus: true);
+@media (min-width: @screen-sm) {
+  @screens: ~'sm';
+  .position-inset(0, 0px, @screens: @screens);
+  .position-inset(auto, auto, @screens: @screens);
+  .position-inset(~"1\/2", 50%, @minus: true, @screens: @screens);
+  .position-inset(full, 100%, @minus: true, @screens: @screens);
+}
+@media (min-width: @screen-md) {
+  @screens: ~'md';
+  .position-inset(0, 0px, @screens: @screens);
+  .position-inset(auto, auto, @screens: @screens);
+  .position-inset(~"1\/2", 50%, @minus: true, @screens: @screens);
+  .position-inset(full, 100%, @minus: true, @screens: @screens);
+}
+@media (min-width: @screen-lg) {
+  @screens: ~'lg';
+  .position-inset(0, 0px, @screens: @screens);
+  .position-inset(auto, auto, @screens: @screens);
+  .position-inset(~"1\/2", 50%, @minus: true, @screens: @screens);
+  .position-inset(full, 100%, @minus: true, @screens: @screens);
+}
+@media (min-width: @screen-xl) {
+  @screens: ~'xl';
+  .position-inset(0, 0px, @screens: @screens);
+  .position-inset(auto, auto, @screens: @screens);
+  .position-inset(~"1\/2", 50%, @minus: true, @screens: @screens);
+  .position-inset(full, 100%, @minus: true, @screens: @screens);
+}
+
+/*
+ * Visibility
+**/
+.visibility(visible, visible);
+.visibility(invisible, hidden);
+
+
+.z-index(0, 0, @hover: true);
+.z-index(1, 1, @hover: true, @minus: true);
+.z-index(2, 2, @hover: true);
+.z-index(3, 3, @hover: true);
+.z-index(4, 4, @hover: true);
+.z-index(5, 5, @hover: true);
+.z-index(6, 6, @hover: true);
+.z-index(7, 7, @hover: true);
+.z-index(8, 8, @hover: true);
+.z-index(9, 9, @hover: true);
+.z-index(10, 10, @hover: true);
+.z-index(100, 100, @hover: true);
+.z-index(auto, auto, @hover: true);
+

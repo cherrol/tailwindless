@@ -1,0 +1,55 @@
+/*
+ * Border collapse
+**/
+.transform-origin(center, center);
+.transform-origin(left, left);
+.transform-origin(right, right);
+.transform-origin(top, top);
+.transform-origin(bottom, bottom);
+.transform-origin(top-left, ~'top left');
+.transform-origin(top-right, ~'top right');
+.transform-origin(bottom-left, ~'bottom left');
+.transform-origin(bottom-right, ~'bottom right');
+
+/*
+ * Transform scale
+**/
+.transform-scale(105, 1.05, @hover: true);
+
+/*
+ * Transform rotate
+**/
+.transform-rotate(90, 90deg, @hover: true, @minus: true);
+.transform-rotate(180, 180deg, @hover: true, @minus: true);
+.transform-rotate(360, 360deg, @hover: true, @minus: true);
+
+/*
+ * Transform translate
+**/
+.transform-translate(0, 0);
+.transform-translate(~'1\/2', 50%, @minus: true);
+.transform-translate(full, 100%, @minus: true);
+@media (min-width: @screen-sm) {
+  @screens: ~'sm';
+  .transform-translate(0, 0, @screens: @screens);
+  .transform-translate(~'1\/2', 50%, @minus: true, @screens: @screens);
+  .transform-translate(full, 100%, @minus: true, @screens: @screens);
+}
+@media (min-width: @screen-md) {
+  @screens: ~'md';
+  .transform-translate(0, 0, @screens: @screens);
+  .transform-translate(~'1\/2', 50%, @minus: true, @screens: @screens);
+  .transform-translate(full, 100%, @minus: true, @screens: @screens);
+}
+@media (min-width: @screen-lg) {
+  @screens: ~'lg';
+  .transform-translate(0, 0, @screens: @screens);
+  .transform-translate(~'1\/2', 50%, @minus: true, @screens: @screens);
+  .transform-translate(full, 100%, @minus: true, @screens: @screens);
+}
+@media (min-width: @screen-xl) {
+  @screens: ~'xl';
+  .transform-translate(0, 0, @screens: @screens);
+  .transform-translate(~'1\/2', 50%, @minus: true, @screens: @screens);
+  .transform-translate(full, 100%, @minus: true, @screens: @screens);
+}

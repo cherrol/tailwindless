@@ -1,0 +1,22 @@
+{
+  "name": "tailwindless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "chokidar \"src/**/*.less\" -c \"npm run watch:less\" --initial",
+    "watch:less": "lessc src/index.less dist/index.css --source-map",
+    "build": "lessc src/index.less dist/index.css",
+    "prewatch": "rimraf dist",
+    "prebuild": "rimraf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "less": "^2.5.3",
+    "rimraf": "^3.0.2"
+  }
+}

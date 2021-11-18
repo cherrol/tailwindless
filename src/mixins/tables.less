@@ -1,0 +1,13 @@
+/*
+ * Border collapse
+**/
+.border-collapse(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .mixins(~'border-@{selector}', border-collapse, @value, @hover, @focus, @screens);
+}
+
+/*
+ * Table layout
+**/
+.table-layout(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .mixins(~'table-@{selector}', table-layout, @value, @hover, @focus, @screens);
+}

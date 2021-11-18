@@ -1,0 +1,79 @@
+
+/*
+ * Border radius
+**/
+.border-radius(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .mixins(~'rounded-@{selector}', border-radius, @value, @hover, @focus, @screens);
+
+  .mixins(~'rounded-tl-@{selector}', border-top-left-radius, @value, @hover, @focus, @screens);
+  .mixins(~'rounded-tr-@{selector}', border-top-right-radius, @value, @hover, @focus, @screens);
+  .mixins(~'rounded-bl-@{selector}', border-bottom-left-radius, @value, @hover, @focus, @screens);
+  .mixins(~'rounded-br-@{selector}', border-bottom-right-radius, @value, @hover, @focus, @screens);
+
+  .mixins(~'rounded-l-@{selector}', border-top-left-radius, @value, @hover, @focus, @screens);
+  .mixins(~'rounded-l-@{selector}', border-bottom-left-radius, @value, @hover, @focus, @screens);
+  
+  .mixins(~'rounded-r-@{selector}', border-top-right-radius, @value, @hover, @focus, @screens);
+  .mixins(~'rounded-r-@{selector}', border-bottom-right-radius, @value, @hover, @focus, @screens);
+
+  .mixins(~'rounded-t-@{selector}', border-top-left-radius, @value, @hover, @focus, @screens);
+  .mixins(~'rounded-t-@{selector}', border-top-right-radius, @value, @hover, @focus, @screens);
+
+  .mixins(~'rounded-b-@{selector}', border-bottom-left-radius, @value, @hover, @focus, @screens);
+  .mixins(~'rounded-b-@{selector}', border-bottom-right-radius, @value, @hover, @focus, @screens);
+}
+
+/*
+ * Border width
+**/
+.border-width(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .mixins(~'border-l-@{selector}', border-left-width, @value, @hover, @focus, @screens);
+  .mixins(~'border-r-@{selector}', border-right-width, @value, @hover, @focus, @screens);
+  .mixins(~'border-t-@{selector}', border-top-width, @value, @hover, @focus, @screens);
+  .mixins(~'border-b-@{selector}', border-bottom-width, @value, @hover, @focus, @screens);
+
+  .mixins(~'border-x-@{selector}', border-left-width, @value, @hover, @focus, @screens);
+  .mixins(~'border-x-@{selector}', border-right-width, @value, @hover, @focus, @screens);
+
+  .mixins(~'border-y-@{selector}', border-top-width, @value, @hover, @focus, @screens);
+  .mixins(~'border-y-@{selector}', border-bottom-width, @value, @hover, @focus, @screens);
+
+  .mixins(~'border-@{selector}', border-width, @value, @hover, @focus, @screens);
+}
+
+/*
+ * Border color
+**/
+.border-color(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .mixins(~'border-l-@{selector}', border-left-color, @value, @hover, @focus, @screens);
+  .mixins(~'border-r-@{selector}', border-right-color, @value, @hover, @focus, @screens);
+  .mixins(~'border-t-@{selector}', border-top-color, @value, @hover, @focus, @screens);
+  .mixins(~'border-b-@{selector}', border-bottom-color, @value, @hover, @focus, @screens);
+
+  .mixins(~'border-x-@{selector}', border-left-color, @value, @hover, @focus, @screens);
+  .mixins(~'border-x-@{selector}', border-right-color, @value, @hover, @focus, @screens);
+
+  .mixins(~'border-y-@{selector}', border-top-color, @value, @hover, @focus, @screens);
+  .mixins(~'border-y-@{selector}', border-bottom-color, @value, @hover, @focus, @screens);
+
+  .mixins(~'border-@{selector}', border-color, @value, @hover, @focus, @screens);
+}
+
+/*
+ * Border color
+**/
+.border-style(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .mixins(~'border-l-@{selector}', border-left-style, @value, @hover, @focus, @screens);
+  .mixins(~'border-r-@{selector}', border-right-style, @value, @hover, @focus, @screens);
+  .mixins(~'border-t-@{selector}', border-top-style, @value, @hover, @focus, @screens);
+  .mixins(~'border-b-@{selector}', border-bottom-style, @value, @hover, @focus, @screens);
+
+  .mixins(~'border-x-@{selector}', border-left-style, @value, @hover, @focus, @screens);
+  .mixins(~'border-x-@{selector}', border-right-style, @value, @hover, @focus, @screens);
+
+  .mixins(~'border-y-@{selector}', border-top-style, @value, @hover, @focus, @screens);
+  .mixins(~'border-y-@{selector}', border-bottom-style, @value, @hover, @focus, @screens);
+
+  .mixins(~'border-@{selector}', border-style, @value, @hover, @focus, @screens);
+}
+

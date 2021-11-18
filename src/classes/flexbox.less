@@ -1,0 +1,163 @@
+/*
+ * Flex direction
+**/
+.flex-direction(row, row);
+.flex-direction(row-reverse, row-reverse);
+.flex-direction(col, column);
+.flex-direction(col-reverse, column-reverse);
+
+/*
+ * Flex wrap
+**/
+.flex-wrap(wrap, wrap);
+.flex-wrap(wrap-reverse, wrap-reverse);
+.flex-wrap(nowrap, nowrap);
+// With responsive
+@media (min-width: @screen-sm) {
+  @screens: ~'sm';
+  .flex-wrap(wrap, wrap, @screens: @screens);
+  .flex-wrap(wrap-reverse, wrap-reverse, @screens: @screens);
+  .flex-wrap(nowrap, nowrap, @screens: @screens);
+}
+@media (min-width: @screen-md) {
+  @screens: ~'md';
+  .flex-wrap(wrap, wrap, @screens: @screens);
+  .flex-wrap(wrap-reverse, wrap-reverse, @screens: @screens);
+  .flex-wrap(nowrap, nowrap, @screens: @screens);
+}
+@media (min-width: @screen-lg) {
+  @screens: ~'lg';
+  .flex-wrap(wrap, wrap, @screens:@screens);
+  .flex-wrap(wrap-reverse, wrap-reverse, @screens:@screens);
+  .flex-wrap(nowrap, nowrap, @screens:@screens);
+}
+@media (min-width: @screen-xl) {
+  @screens: ~'xl';
+  .flex-wrap(wrap, wrap, @screens: @screens);
+  .flex-wrap(wrap-reverse, wrap-reverse, @screens: @screens);
+  .flex-wrap(nowrap, nowrap, @screens: @screens);
+}
+
+/*
+ * Justify content
+**/
+.justify-content(start, flex-start);
+.justify-content(end, flex-end);
+.justify-content(center, center);
+.justify-content(between, space-between);
+.justify-content(around, space-around);
+.justify-content(evenly, space-evenly);
+
+/*
+ * Align content
+**/
+.align-content(start, flex-start);
+.align-content(end, flex-end);
+.align-content(center, center);
+.align-content(between, space-between);
+.align-content(around, space-around);
+.align-content(evenly, space-evenly);
+
+/*
+ * Place content
+**/
+.place-content(start, flex-start);
+.place-content(end, flex-end);
+.place-content(center, center);
+.place-content(between, space-between);
+.place-content(around, space-around);
+.place-content(evenly, space-evenly);
+.place-content(stretch, stretch);
+
+/*
+* Align items
+*/
+.align-items(start, flex-start);
+.align-items(end, flex-end);
+.align-items(center, center);
+.align-items(baseline, baseline);
+.align-items(stretch, stretch);
+
+/*
+* Align Self
+*/
+.align-self(start, flex-start);
+.align-self(end, flex-end);
+.align-self(center, center);
+.align-self(baseline, baseline);
+.align-self(stretch, stretch);
+
+/*
+* Align self
+*/
+.justify-items(start, start);
+.justify-items(end, end);
+.justify-items(center, center);
+.justify-items(auto, auto);
+.justify-items(stretch, stretch);
+
+/*
+* Justify self
+*/
+.justify-self(start, start);
+.justify-self(end, end);
+.justify-self(center, center);
+.justify-self(auto, auto);
+.justify-self(stretch, stretch);
+
+/*
+  * Place items
+ **/
+.place-items(start, start);
+.place-items(end, end);
+.place-items(center, center);
+.place-items(auto, auto);
+.place-items(stretch, stretch);
+
+/*
+* Place self
+*/
+.place-self(start, start);
+.place-self(end, end);
+.place-self(center, center);
+.place-self(auto, auto);
+.place-self(stretch, stretch);
+
+/*
+* Flex grow
+*/
+.flex-grow(grow-0, 0);
+.flex-grow(grow, 1);
+
+/*
+ * Flex shrink
+**/
+.flex-shrink(shrink-0, 0);
+.flex-shrink(shrink, 1);
+
+/*
+ * Flex
+**/
+.flex(1, ~"1 1 0%");
+.flex(auto, ~"1 1 auto");
+.flex(initial, ~"0 1 auto");
+.flex(none, none);
+
+/*
+ * Order
+**/
+.order(1, 1);
+.order(2, 2);
+.order(3, 3);
+.order(4, 4);
+.order(5, 5);
+.order(6, 6);
+.order(7, 7);
+.order(8, 8);
+.order(9, 9);
+.order(10, 10);
+.order(11, 11);
+.order(12, 12);
+.order(first, -9999);
+.order(last, 9999);
+.order(none, none);

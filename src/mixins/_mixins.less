@@ -1,0 +1,77 @@
+/*
+ * Mixins hover
+**/
+.mixins-hover(@selector, @property, @value, @hover: false) when (@hover) {
+  .hover@{separator}@{selector}:hover {
+    @{property}: @value;
+  }
+}
+
+/*
+ * Mixins focus
+**/
+.mixins-focus(@selector, @property, @value, @focus: false) when (@focus) {
+  .focus@{separator}@{selector}:focus {
+    @{property}: @value;
+  }
+}
+
+/*
+ * Mixins screens mixins
+**/
+.mixins-screens(@selector, @property, @value, @screens: false) when (isstring(@screens)) {
+  .@{screens}@{separator}@{selector} {
+    @{property}: @value;
+  }
+}
+
+/*
+ * Mixins screens with hover
+**/
+.mixins-screens-hover(@selector, @property, @value, @hover: false, @screens: false) when (@hover) and (isstring(@screens)) {
+  .@{screens}@{separator}hover@{separator}@{selector}:hover {
+    @{property}: @value;
+  }
+}
+
+/*
+ * Mixins screens with focus
+**/
+.mixins-screens-focus(@selector, @property, @value, @focus: false, @screens: false) when (@focus) and (isstring(@screens)) {
+  .@{screens}@{separator}focus@{separator}@{selector}:focus {
+    @{property}: @value;
+  }
+}
+
+/*
+ * Mixins
+ * @selector    选择器
+ * @property    属性
+ * [@value]     属性值
+ * [@hover]     hover选择器
+ * [@focus]     focus选择器
+ * [@screens]   媒体查询选择器
+**/
+.mixins(@selector, @property, @value, @hover: false, @focus: false, @screens: false) when not (isstring(@screens)){
+  .@{selector} {
+    @{property}: @value;
+  }
+
+  .mixins-focus(@selector, @property, @value, @focus);
+  .mixins-hover(@selector, @property, @value, @hover);
+}
+
+/*
+ * Mixins
+ * @selector    选择器
+ * @property    属性
+ * [@value]     属性值
+ * [@hover]     hover选择器
+ * [@focus]     focus选择器
+ * [@screens]   媒体查询选择器
+**/
+.mixins(@selector, @property, @value, @hover: false, @focus: false, @screens: false) when (isstring(@screens)) {
+  .mixins-screens(@selector, @property, @value, @screens);
+  .mixins-screens-focus(@selector, @property, @value, @focus, @screens);
+  .mixins-screens-hover(@selector, @property, @value, @hover, @screens);
+}
