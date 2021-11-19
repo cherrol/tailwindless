@@ -1,53 +1,53 @@
 /*
  * Background color opacity
 **/
-.background-color-opacity(@selector, @value, @opacity: false, @hover: false, @focus: false, @screens: false) when (@opacity > 0) {
-  .mixins(~'bg-@{selector}-@{opacity}', background-color, fade(@value, @opacity), @hover, @focus, @screens);
+.tw-background-color-opacity(@selector, @value, @opacity: false, @hover: false, @focus: false, @screens: false) when (@opacity > 0) {
+  .tw-mixins(~'bg-@{selector}-@{opacity}', background-color, fade(@value, @opacity), @hover, @focus, @screens);
 
   // 递归生成多个opacity
-  .background-color-opacity(@selector, @value, @opacity: (@opacity - 10), @hover, @focus, @screens);
+  .tw-background-color-opacity(@selector, @value, @opacity: (@opacity - 10), @hover, @focus, @screens);
 }
 
 /*
  * Background color generator
 **/
-.background-color(@selector, @value, @opacity: false, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'bg-@{selector}', background-color, @value, @hover, @focus, @screens);
+.tw-background-color(@selector, @value, @opacity: false, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'bg-@{selector}', background-color, @value, @hover, @focus, @screens);
 
-  .background-color-opacity(@selector, @value, @opacity, @hover, @focus, @screens);
+  .tw-background-color-opacity(@selector, @value, @opacity, @hover, @focus, @screens);
 }
 
 /*
  * Background attachment
 **/
-.background-attachment(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'bg-@{selector}', background-attachment, @value, @hover, @focus, @screens);
+.tw-background-attachment(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'bg-@{selector}', background-attachment, @value, @hover, @focus, @screens);
 }
 
 /*
  * Background clip
 **/
-.background-clip(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'bg-clip-@{selector}', background-clip, @value, @hover, @focus, @screens);
+.tw-background-clip(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'bg-clip-@{selector}', background-clip, @value, @hover, @focus, @screens);
 }
 
 /*
  * Background position
 **/
-.background-position(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'bg-@{selector}', background-position, @value, @hover, @focus, @screens);
+.tw-background-position(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'bg-@{selector}', background-position, @value, @hover, @focus, @screens);
 }
 
 /*
  * Background repeat
 **/
-.background-repeat(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'bg-@{selector}', background-repeat, @value, @hover, @focus, @screens);
+.tw-background-repeat(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'bg-@{selector}', background-repeat, @value, @hover, @focus, @screens);
 }
 
 /*
  * Background size
 **/
-.background-size(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'bg-@{selector}', background-size, @value, @hover, @focus, @screens);
+.tw-background-size(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'bg-@{selector}', background-size, @value, @hover, @focus, @screens);
 }

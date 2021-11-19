@@ -1,36 +1,36 @@
 /*
  * Transition
 **/
-.transition-duration(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'duration-@{selector}', transition-duration, @value, @hover, @focus, @screens);
+.tw-transition-duration(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'duration-@{selector}', transition-duration, @value, @hover, @focus, @screens);
 }
 
 /*
  * Transition timing function
 **/
-.transition-timing-function(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(@selector, transition-timing-function, @value, @hover, @focus, @screens);
+.tw-transition-timing-function(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(@selector, transition-timing-function, @value, @hover, @focus, @screens);
 }
 
 /*
  * Transition delay
 **/
-.transition-delay(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'delay-@{selector}', transition-delay, @value, @hover, @focus, @screens);
+.tw-transition-delay(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'delay-@{selector}', transition-delay, @value, @hover, @focus, @screens);
 }
 
 /*
  * Transitions
 **/
-.transitions(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'transition-@{selector}', transition-property, @value, @hover, @focus, @screens);
-  .mixins(~'transition-@{selector}', transition-timing-function, @transition-timing-function-default, @hover, @focus, @screens);
-  .mixins(~'transition-@{selector}', transition-duration, @transition-duration-default, @hover, @focus, @screens);
+.tw-transitions(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'transition-@{selector}', transition-property, @value, @hover, @focus, @screens);
+  .tw-mixins(~'transition-@{selector}', transition-timing-function, @transition-timing-function-default, @hover, @focus, @screens);
+  .tw-mixins(~'transition-@{selector}', transition-duration, @transition-duration-default, @hover, @focus, @screens);
 }
 
 /*
  * Animation
 **/
-.animation(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'animate-@{selector}', animation, @value, @hover, @focus, @screens);
+.tw-animation(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'animate-@{selector}', animation, @value, @hover, @focus, @screens);
 }

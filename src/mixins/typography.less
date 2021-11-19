@@ -1,122 +1,122 @@
 /*
  * Font size
 **/
-.font-size(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'text-@{selector}', font-size, @value, @hover, @focus, @screens);
+.tw-font-size(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'text-@{selector}', font-size, @value, @hover, @focus, @screens);
 }
 
 /*
  * Font style
 **/
-.font-style(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'@{selector}', font-style, @value, @hover, @focus, @screens);
+.tw-font-style(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'@{selector}', font-style, @value, @hover, @focus, @screens);
 }
 
 /*
  * Font weight
 **/
-.font-weight(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'font-@{selector}', font-weight, @value, @hover, @focus, @screens);
+.tw-font-weight(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'font-@{selector}', font-weight, @value, @hover, @focus, @screens);
 }
 
 /*
  * Letter sapcing
 **/
-.letter-spacing(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'tracking-@{selector}', letter-spacing, @value, @hover, @focus, @screens);
+.tw-letter-spacing(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'tracking-@{selector}', letter-spacing, @value, @hover, @focus, @screens);
 }
 
 /*
  * Line height
 **/
-.line-height(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'leading-@{selector}', line-height, @value, @hover, @focus, @screens);
+.tw-line-height(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'leading-@{selector}', line-height, @value, @hover, @focus, @screens);
 }
 
 /*
  * List style type
 **/
-.list-style-type(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'list-@{selector}', list-style-type, @value, @hover, @focus, @screens);
+.tw-list-style-type(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'list-@{selector}', list-style-type, @value, @hover, @focus, @screens);
 }
 
 /*
  * List style position
 **/
-.list-style-position(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'list-@{selector}', list-style-position, @value, @hover, @focus, @screens);
+.tw-list-style-position(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'list-@{selector}', list-style-position, @value, @hover, @focus, @screens);
 }
 
 /*
  * Text align
 **/
-.text-align(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'text-@{selector}', text-align, @value, @hover, @focus, @screens);
+.tw-text-align(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'text-@{selector}', text-align, @value, @hover, @focus, @screens);
 }
 
 /*
  * Text color
 **/
-.text-color(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'text-@{selector}', color, @value, @hover, @focus, @screens);
+.tw-text-color(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'text-@{selector}', color, @value, @hover, @focus, @screens);
 }
 
 /*
  * Text decoration
 **/
-.text-decoration(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'@{selector}', text-decoration, @value, @hover, @focus, @screens);
+.tw-text-decoration(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'@{selector}', text-decoration, @value, @hover, @focus, @screens);
 }
 
 /*
  * Text transform
 **/
-.text-transform(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'@{selector}', text-transform, @value, @hover, @focus, @screens);
+.tw-text-transform(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'@{selector}', text-transform, @value, @hover, @focus, @screens);
 }
 
 /*
  * Text overflow
 **/
-.text-overflow(@selector, @value, @hover: false, @focus: false, @screens: false) when not (isnumber(@selector)) {
-  .mixins(~'overflow-@{selector}', text-transform, @value, @hover, @focus, @screens);
+.tw-text-overflow(@selector, @value, @hover: false, @focus: false, @screens: false) when not (isnumber(@selector)) {
+  .tw-mixins(~'overflow-@{selector}', text-transform, @value, @hover, @focus, @screens);
 }
-.text-overflow(@selector, @value, @hover: false, @focus: false, @screens: false) when (@selector <= 1) {
-  .mixins(~'truncate-@{selector}', overflow, ~'hidden !important', @hover, @focus, @screens);
-  .mixins(~'truncate-@{selector}', text-overflow, ellipsis, @hover, @focus, @screens);
-  .mixins(~'truncate-@{selector}', white-space, nowrap, @hover, @focus, @screens);
+.tw-text-overflow(@selector, @value, @hover: false, @focus: false, @screens: false) when (@selector <= 1) {
+  .tw-mixins(~'truncate-@{selector}', overflow, ~'hidden !important', @hover, @focus, @screens);
+  .tw-mixins(~'truncate-@{selector}', text-overflow, ellipsis, @hover, @focus, @screens);
+  .tw-mixins(~'truncate-@{selector}', white-space, nowrap, @hover, @focus, @screens);
 }
-.text-overflow(@selector, @value, @hover: false, @focus: false, @screens: false) when (@selector > 1) {
-  .mixins(~'truncate-@{selector}', display, -webkit-box, @hover, @focus, @screens);
-  .mixins(~'truncate-@{selector}', -webkit-box-orient, vertical, @hover, @focus, @screens);
-  .mixins(~'truncate-@{selector}', overflow, ~'hidden !important', @hover, @focus, @screens);
-  .mixins(~'truncate-@{selector}', -webkit-line-clamp, @value, @hover, @focus, @screens);
-  .mixins(~'truncate-@{selector}', height, (@line-height-default * @value * 1em), @hover, @focus, @screens);
+.tw-text-overflow(@selector, @value, @hover: false, @focus: false, @screens: false) when (@selector > 1) {
+  .tw-mixins(~'truncate-@{selector}', display, -webkit-box, @hover, @focus, @screens);
+  .tw-mixins(~'truncate-@{selector}', -webkit-box-orient, vertical, @hover, @focus, @screens);
+  .tw-mixins(~'truncate-@{selector}', overflow, ~'hidden !important', @hover, @focus, @screens);
+  .tw-mixins(~'truncate-@{selector}', -webkit-line-clamp, @value, @hover, @focus, @screens);
+  .tw-mixins(~'truncate-@{selector}', height, (@line-height-default * @value * 1em), @hover, @focus, @screens);
 }
 
 /*
  * Vertical align
 **/
-.vertical-align(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'align-@{selector}', vertical-align, @value, @hover, @focus, @screens);
+.tw-vertical-align(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'align-@{selector}', vertical-align, @value, @hover, @focus, @screens);
 }
 
 /*
  * White space
 **/
-.white-space(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'whitespace-@{selector}', white-space, @value, @hover, @focus, @screens);
+.tw-white-space(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'whitespace-@{selector}', white-space, @value, @hover, @focus, @screens);
 }
 
 /*
  * White space
 **/
-.word-break(@selector, @value, @hover: false, @focus: false, @screens: false) when not (@selector = words) {
-  .mixins(~'break-@{selector}', word-break, @value, @hover, @focus, @screens);
+.tw-word-break(@selector, @value, @hover: false, @focus: false, @screens: false) when not (@selector = words) {
+  .tw-mixins(~'break-@{selector}', word-break, @value, @hover, @focus, @screens);
 }
-.word-break(@selector, @value, @hover: false, @focus: false, @screens: false) when (@selector = normal) {
-  .mixins(~'break-@{selector}', overflow-wrap, @value, @hover, @focus, @screens);
+.tw-word-break(@selector, @value, @hover: false, @focus: false, @screens: false) when (@selector = normal) {
+  .tw-mixins(~'break-@{selector}', overflow-wrap, @value, @hover, @focus, @screens);
 }
-.word-break(@selector, @value, @hover: false, @focus: false, @screens: false) when (@selector = words) {
-  .mixins(~'break-@{selector}', overflow-wrap, @value, @hover, @focus, @screens);
+.tw-word-break(@selector, @value, @hover: false, @focus: false, @screens: false) when (@selector = words) {
+  .tw-mixins(~'break-@{selector}', overflow-wrap, @value, @hover, @focus, @screens);
 }

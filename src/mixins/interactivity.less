@@ -1,35 +1,35 @@
 /*
 * Cursor
 **/
-.corsor(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'corsor-@{selector}', cursor, @value, @hover, @focus, @screens);
+.tw-corsor(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'corsor-@{selector}', cursor, @value, @hover, @focus, @screens);
 }
 
 /*
 * Outline
 **/
-.outline(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'outline-@{selector}', outline, ~'@{outline-size-default} solid @{value}', @hover, @focus, @screens);
-  .mixins(~'outline-@{selector}', outline-offset, @outline-size-default, @hover, @focus, @screens);
+.tw-outline(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'outline-@{selector}', outline, ~'@{outline-size-default} solid @{value}', @hover, @focus, @screens);
+  .tw-mixins(~'outline-@{selector}', outline-offset, @outline-size-default, @hover, @focus, @screens);
 }
 
 /*
 * Pointer events
 **/
-.pointer-events(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'pointer-events-@{selector}', pointer-events, @value, @hover, @focus, @screens);
+.tw-pointer-events(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'pointer-events-@{selector}', pointer-events, @value, @hover, @focus, @screens);
 }
 
 /*
 * Resize
 **/
-.resize(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(@selector, resize, @value, @hover, @focus, @screens);
+.tw-resize(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(@selector, resize, @value, @hover, @focus, @screens);
 }
 
 /*
 * User select
 **/
-.user-select(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'select-@{selector}', user-select, @value, @hover, @focus, @screens);
+.tw-user-select(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'select-@{selector}', user-select, @value, @hover, @focus, @screens);
 }

@@ -1,117 +1,117 @@
 /*
  * Box sizing
 **/
-.box-sizing(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'box-@{selector}', box-sizing, @value, @hover, @focus, @screens);
+.tw-box-sizing(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'box-@{selector}', box-sizing, @value, @hover, @focus, @screens);
 }
 
 /*
  * Display
 **/
-.display(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(@selector, display, @value, @hover, @focus, @screens);
+.tw-display(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(@selector, display, @value, @hover, @focus, @screens);
 }
 
 /*
  * Float
 **/
-.float(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'float-@{selector}', float, @value, @hover, @focus, @screens);
+.tw-float(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'float-@{selector}', float, @value, @hover, @focus, @screens);
 }
 
 /*
  * Clear
 **/
-.clear(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'clear-@{selector}', clear, @value, @hover, @focus, @screens);
+.tw-clear(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'clear-@{selector}', clear, @value, @hover, @focus, @screens);
 }
 
 /*
  * Object fit
 **/
-.object-fit(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'object-@{selector}', object-fit, @value, @hover, @focus, @screens);
+.tw-object-fit(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'object-@{selector}', object-fit, @value, @hover, @focus, @screens);
 }
 
 /*
  * Object position
 **/
-.object-position(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'object-@{selector}', object-position, @value, @hover, @focus, @screens);
+.tw-object-position(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'object-@{selector}', object-position, @value, @hover, @focus, @screens);
 }
 
 /*
  * overflow
 **/
-.overflow(@selector, @value, @hover: false, @focus: false, @screens: false, @important: false) {
-  .mixins(~'overflow-@{selector}', overflow, @value, @hover, @focus, @screens);
-  .mixins(~'overflow-x-@{selector}', overflow-x, @value, @hover, @focus, @screens);
-  .mixins(~'overflow-y-@{selector}', overflow-y, @value, @hover, @focus, @screens);
+.tw-overflow(@selector, @value, @hover: false, @focus: false, @screens: false, @important: false) {
+  .tw-mixins(~'overflow-@{selector}', overflow, @value, @hover, @focus, @screens);
+  .tw-mixins(~'overflow-x-@{selector}', overflow-x, @value, @hover, @focus, @screens);
+  .tw-mixins(~'overflow-y-@{selector}', overflow-y, @value, @hover, @focus, @screens);
 }
-.overflow(@selector, @value, @hover: false, @focus: false, @screens: false, @important: false) when (@important) {
-  .mixins(~'overflow-@{selector}\!', overflow, ~'@{value} !important', @hover, @focus, @screens);
-  .mixins(~'overflow-x-@{selector}\!', overflow-x, ~'@{value} !important', @hover, @focus, @screens);
-  .mixins(~'overflow-y-@{selector}\!', overflow-y, ~'@{value} !important', @hover, @focus, @screens);
+.tw-overflow(@selector, @value, @hover: false, @focus: false, @screens: false, @important: false) when (@important) {
+  .tw-mixins(~'overflow-@{selector}\!', overflow, ~'@{value} !important', @hover, @focus, @screens);
+  .tw-mixins(~'overflow-x-@{selector}\!', overflow-x, ~'@{value} !important', @hover, @focus, @screens);
+  .tw-mixins(~'overflow-y-@{selector}\!', overflow-y, ~'@{value} !important', @hover, @focus, @screens);
 }
 
 /*
  * Position
 **/
-.position(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'@{selector}', position, @value, @hover, @focus, @screens);
+.tw-position(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'@{selector}', position, @value, @hover, @focus, @screens);
 }
 
 /*
  * Position inset
 **/
-.position-inset(@selector, @value, @hover: false, @focus: false, @screens: false, @minus: false) {
-  .mixins(~'left-@{selector}', left, @value, @hover, @focus, @screens);
-  .mixins(~'right-@{selector}', right, @value, @hover, @focus, @screens);
-  .mixins(~'top-@{selector}', top, @value, @hover, @focus, @screens);
-  .mixins(~'bottom-@{selector}', bottom, @value, @hover, @focus, @screens);
+.tw-position-inset(@selector, @value, @hover: false, @focus: false, @screens: false, @minus: false) {
+  .tw-mixins(~'left-@{selector}', left, @value, @hover, @focus, @screens);
+  .tw-mixins(~'right-@{selector}', right, @value, @hover, @focus, @screens);
+  .tw-mixins(~'top-@{selector}', top, @value, @hover, @focus, @screens);
+  .tw-mixins(~'bottom-@{selector}', bottom, @value, @hover, @focus, @screens);
 
-  .mixins(~'inset-x-@{selector}', left, @value, @hover, @focus, @screens);
-  .mixins(~'inset-x-@{selector}', right, @value, @hover, @focus, @screens);
+  .tw-mixins(~'inset-x-@{selector}', left, @value, @hover, @focus, @screens);
+  .tw-mixins(~'inset-x-@{selector}', right, @value, @hover, @focus, @screens);
 
-  .mixins(~'inset-y-@{selector}', top, @value, @hover, @focus, @screens);
-  .mixins(~'inset-y-@{selector}', bottom, @value, @hover, @focus, @screens);
+  .tw-mixins(~'inset-y-@{selector}', top, @value, @hover, @focus, @screens);
+  .tw-mixins(~'inset-y-@{selector}', bottom, @value, @hover, @focus, @screens);
 
-  .mixins(~'inset-@{selector}', left, @value, @hover, @focus, @screens);
-  .mixins(~'inset-@{selector}', right, @value, @hover, @focus, @screens);
-  .mixins(~'inset-@{selector}', top, @value, @hover, @focus, @screens);
-  .mixins(~'inset-@{selector}', bottom, @value, @hover, @focus, @screens);
+  .tw-mixins(~'inset-@{selector}', left, @value, @hover, @focus, @screens);
+  .tw-mixins(~'inset-@{selector}', right, @value, @hover, @focus, @screens);
+  .tw-mixins(~'inset-@{selector}', top, @value, @hover, @focus, @screens);
+  .tw-mixins(~'inset-@{selector}', bottom, @value, @hover, @focus, @screens);
 }
-.position-inset(@selector, @value, @hover: false, @focus: false, @screens: false, @minus: false) when (@minus) {
-  .mixins(~'-left-@{selector}', left, ~'-@{value}', @hover, @focus, @screens);
-  .mixins(~'-right-@{selector}', right, ~'-@{value}', @hover, @focus, @screens);
-  .mixins(~'-top-@{selector}', top, ~'-@{value}', @hover, @focus, @screens);
-  .mixins(~'-bottom-@{selector}', bottom, ~'-@{value}', @hover, @focus, @screens);
+.tw-position-inset(@selector, @value, @hover: false, @focus: false, @screens: false, @minus: false) when (@minus) {
+  .tw-mixins(~'-left-@{selector}', left, ~'-@{value}', @hover, @focus, @screens);
+  .tw-mixins(~'-right-@{selector}', right, ~'-@{value}', @hover, @focus, @screens);
+  .tw-mixins(~'-top-@{selector}', top, ~'-@{value}', @hover, @focus, @screens);
+  .tw-mixins(~'-bottom-@{selector}', bottom, ~'-@{value}', @hover, @focus, @screens);
 
-  .mixins(~'-inset-x-@{selector}', left, ~'-@{value}', @hover, @focus, @screens);
-  .mixins(~'-inset-x-@{selector}', right, ~'-@{value}', @hover, @focus, @screens);
+  .tw-mixins(~'-inset-x-@{selector}', left, ~'-@{value}', @hover, @focus, @screens);
+  .tw-mixins(~'-inset-x-@{selector}', right, ~'-@{value}', @hover, @focus, @screens);
 
-  .mixins(~'-inset-y-@{selector}', top, ~'-@{value}', @hover, @focus, @screens);
-  .mixins(~'-inset-y-@{selector}', bottom, ~'-@{value}', @hover, @focus, @screens);
+  .tw-mixins(~'-inset-y-@{selector}', top, ~'-@{value}', @hover, @focus, @screens);
+  .tw-mixins(~'-inset-y-@{selector}', bottom, ~'-@{value}', @hover, @focus, @screens);
 
-  .mixins(~'-inset-@{selector}', left, ~'-@{value}', @hover, @focus, @screens);
-  .mixins(~'-inset-@{selector}', right, ~'-@{value}', @hover, @focus, @screens);
-  .mixins(~'-inset-@{selector}', top, ~'-@{value}', @hover, @focus, @screens);
-  .mixins(~'-inset-@{selector}', bottom, ~'-@{value}', @hover, @focus, @screens);
+  .tw-mixins(~'-inset-@{selector}', left, ~'-@{value}', @hover, @focus, @screens);
+  .tw-mixins(~'-inset-@{selector}', right, ~'-@{value}', @hover, @focus, @screens);
+  .tw-mixins(~'-inset-@{selector}', top, ~'-@{value}', @hover, @focus, @screens);
+  .tw-mixins(~'-inset-@{selector}', bottom, ~'-@{value}', @hover, @focus, @screens);
 }
 
 /*
  * Visibility
 **/
-.visibility(@selector, @value, @hover: false, @focus: false, @screens: false) {
-  .mixins(~'@{selector}', visibility, @value, @hover, @focus, @screens);
+.tw-visibility(@selector, @value, @hover: false, @focus: false, @screens: false) {
+  .tw-mixins(~'@{selector}', visibility, @value, @hover, @focus, @screens);
 }
 
 /*
  * Z-index
 **/
-.z-index(@selector, @value, @hover: false, @focus: false, @screens: false, @minus: false) {
-  .mixins(~'z-@{selector}', z-index, @value, @hover, @focus, @screens);
+.tw-z-index(@selector, @value, @hover: false, @focus: false, @screens: false, @minus: false) {
+  .tw-mixins(~'z-@{selector}', z-index, @value, @hover, @focus, @screens);
 }
-.z-index(@selector, @value, @hover: false, @focus: false, @screens: false, @minus: false) when (@minus) {
-  .mixins(~'-z-@{selector}', z-index, ~'-@{value}', @hover, @focus, @screens);
+.tw-z-index(@selector, @value, @hover: false, @focus: false, @screens: false, @minus: false) when (@minus) {
+  .tw-mixins(~'-z-@{selector}', z-index, ~'-@{value}', @hover, @focus, @screens);
 }

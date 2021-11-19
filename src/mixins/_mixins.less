@@ -1,7 +1,7 @@
 /*
  * Mixins hover
 **/
-.mixins-hover(@selector, @property, @value, @hover: false) when (@hover) {
+.tw-mixins-hover(@selector, @property, @value, @hover: false) when (@hover) {
   .hover@{separator}@{selector}:hover {
     @{property}: @value;
   }
@@ -10,7 +10,7 @@
 /*
  * Mixins focus
 **/
-.mixins-focus(@selector, @property, @value, @focus: false) when (@focus) {
+.tw-mixins-focus(@selector, @property, @value, @focus: false) when (@focus) {
   .focus@{separator}@{selector}:focus {
     @{property}: @value;
   }
@@ -19,7 +19,7 @@
 /*
  * Mixins screens mixins
 **/
-.mixins-screens(@selector, @property, @value, @screens: false) when (isstring(@screens)) {
+.tw-mixins-screens(@selector, @property, @value, @screens: false) when (isstring(@screens)) {
   .@{screens}@{separator}@{selector} {
     @{property}: @value;
   }
@@ -28,7 +28,7 @@
 /*
  * Mixins screens with hover
 **/
-.mixins-screens-hover(@selector, @property, @value, @hover: false, @screens: false) when (@hover) and (isstring(@screens)) {
+.tw-mixins-screens-hover(@selector, @property, @value, @hover: false, @screens: false) when (@hover) and (isstring(@screens)) {
   .@{screens}@{separator}hover@{separator}@{selector}:hover {
     @{property}: @value;
   }
@@ -37,7 +37,7 @@
 /*
  * Mixins screens with focus
 **/
-.mixins-screens-focus(@selector, @property, @value, @focus: false, @screens: false) when (@focus) and (isstring(@screens)) {
+.tw-mixins-screens-focus(@selector, @property, @value, @focus: false, @screens: false) when (@focus) and (isstring(@screens)) {
   .@{screens}@{separator}focus@{separator}@{selector}:focus {
     @{property}: @value;
   }
@@ -52,13 +52,13 @@
  * [@focus]     focus选择器
  * [@screens]   媒体查询选择器
 **/
-.mixins(@selector, @property, @value, @hover: false, @focus: false, @screens: false) when not (isstring(@screens)){
+.tw-mixins(@selector, @property, @value, @hover: false, @focus: false, @screens: false) when not (isstring(@screens)){
   .@{selector} {
     @{property}: @value;
   }
 
-  .mixins-focus(@selector, @property, @value, @focus);
-  .mixins-hover(@selector, @property, @value, @hover);
+  .tw-mixins-focus(@selector, @property, @value, @focus);
+  .tw-mixins-hover(@selector, @property, @value, @hover);
 }
 
 /*
@@ -70,8 +70,8 @@
  * [@focus]     focus选择器
  * [@screens]   媒体查询选择器
 **/
-.mixins(@selector, @property, @value, @hover: false, @focus: false, @screens: false) when (isstring(@screens)) {
-  .mixins-screens(@selector, @property, @value, @screens);
-  .mixins-screens-focus(@selector, @property, @value, @focus, @screens);
-  .mixins-screens-hover(@selector, @property, @value, @hover, @screens);
+.tw-mixins(@selector, @property, @value, @hover: false, @focus: false, @screens: false) when (isstring(@screens)) {
+  .tw-mixins-screens(@selector, @property, @value, @screens);
+  .tw-mixins-screens-focus(@selector, @property, @value, @focus, @screens);
+  .tw-mixins-screens-hover(@selector, @property, @value, @hover, @screens);
 }
