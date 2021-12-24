@@ -109,7 +109,7 @@
 }
 
 /*
- * White space
+ * Word break
 **/
 .tw-word-break(@selector, @value, @hover: false, @focus: false, @screens: false) when not (@selector = words) {
   .tw-mixins(~'break-@{selector}', word-break, @value, @hover, @focus, @screens);
