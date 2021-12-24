@@ -4,11 +4,9 @@
   "description": "",
   "main": "src/index.less",
   "scripts": {
-    "watch": "chokidar \"src/**/*.less\" -c \"npm run watch:less\" --initial",
-    "watch:less": "lessc src/index.less dist/index.css --source-map",
-    "build": "lessc src/index.less dist/index.css",
-    "prewatch": "rimraf dist",
-    "prebuild": "rimraf dist",
+    "watch": "rimraf dist && chokidar \"src/**/*.less\" -c \"npm run watch:less\" --initial",
+    "lessc": "lessc src/index.less dist/index.css --source-map",
+    "build": "rimraf dist && lessc src/index.less dist/index.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
