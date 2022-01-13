@@ -1,8 +1,16 @@
 {
-  "name": "tailwindless",
+  "name": "@cherrol/tailwindless",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.less",
+  "main": "dist/index.css",
+  "homepage": "https://github.com/cherrol/tailwindless#readme",
+  "bugs": {
+    "url": "https://github.com/cherrol/tailwindless/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cherrol/tailwindless.git"
+  },
   "scripts": {
     "watch": "rimraf dist && chokidar \"src/**/*.less\" -c \"npm run watch:less\" --initial",
     "lessc": "lessc src/index.less dist/index.css --source-map",
